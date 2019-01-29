@@ -1,0 +1,8 @@
+
+exclude: ['README.md']
+
+permalink: pretty
+
+sass:
+ sass_dir: assets/css
+ style: :nested
