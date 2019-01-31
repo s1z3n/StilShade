@@ -1,77 +1,129 @@
-.main-nav
-  background-color: white
+body
+  height: 3000px
+header
+  display: flex
+  height: 72px
+  width: 100%
+  background-color: #fff
+  flex-direction: row
+  align-items: center
+  justify-content: space-around
   position: fixed
-  width: 100%
-  padding-top: 30px
-  z-index: 1
-.logo
-  position: inherit
-  margin: 20px 20px 20px 20px
-.nav-bar
-  width: 100px
-  margin-left: 240px
-.dropdown .dropbtn
-  border: none
-  outline: none
-  color: black
-  padding: 14px 16px
-  background-color: white
-.dropdown:hover .dropbtn
-  background-color: white
-  font-weight: bold
-.dropdown-content
-  display: none
-  position: absolute
-  background-color: white
-  width: 100%
-  left: 0
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
-  z-index: 1
-.dropdown:hover .dropdown-content
-  display: block
-.Shades
-  background-color: inherit
-  width: 15%
-  margin-left: 255px
-  cursor: pointer
-  &:last-child
-    padding-bottom: 40px
-  h5
-    font-weight: 500
-    margin: 0
-    line-height: 2em
-
-.Shades:hover
-  h5
-    font-weight: 600
-.pic
-  display: none
-  height: 270px
-  width: 25%
-  position: absolute
-  background-color: black
-  padding: 0% 0% 0% 0%
-  margin: -55px 0% 0% 40%
-.txt
-  display: none
-  font-family: sans-serif
-  font-size: 0.85em
-  position: absolute
-  height: 150px
-  width: 15%
-  background-color: red
-  padding: 0 0 0 0
-  // margin: -25px 0 0 20%
-.vl
-  display: none
-  position: absolute
-  // left: -20px
-  border-right: 1px solid #ccc
-  height: 210px
-.Shades:hover .pic, .Shades:hover .txt,.Shades:hover .vl
-  display: block
-
-@media screen and (max-width: 600px)
-  .column
+  top: 0
+  nav
+    // background-color: skyblue
     width: 100%
-    height: auto
+    max-width: 1200px
+    display: flex
+    align-items: center
+
+    .logo
+      // background-color: #ccc
+      width: 240px
+      height: 72px
+      margin-left: 24px
+      font-size: 32px
+      font-weight: bold
+      letter-spacing: 4px
+      text-transform: uppercase
+      display: flex
+      align-items: center
+
+    .menu
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      // background-color: lime
+      height: 70px
+      margin-left: -240px
+      justify-content: center
+      width: 100%
+      .menu-item
+        padding: 18px 24px
+        line-height: 36px
+        margin-left: 36px
+        text-transform: uppercase
+        &:hover
+          border-bottom: 2px solid black
+
+
+
+// .main-nav
+//   background-color: white
+//   position: fixed
+//   width: 100%
+//   padding-top: 30px
+//   z-index: 1
+//   background-color: Pink
+// .logo
+//   position: inherit
+//   margin: 20px 20px 20px 20px
+// .nav-bar
+//   width: 100px
+//   margin-left: 240px
+//   background-color: lime
+// .menu-item
+//   border: none
+//   outline: none
+//   color: black
+//   padding: 14px 16px
+//   background-color: white
+// .menu-item:hover a
+//   background-color: white
+//   font-weight: bold
+// .megamenu-content
+//   display: none
+//   position: absolute
+//   background-color: white
+//   width: 100%
+//   left: 0
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+//   z-index: 1
+// .menu-item:hover .megamenu-content
+//   display: block
+// .Shades
+//   background-color: inherit
+//   width: 15%
+//   margin-left: 255px
+//   cursor: pointer
+//   &:last-child
+//     padding-bottom: 40px
+//   h5
+//     font-weight: 500
+//     margin: 0
+//     line-height: 2em
+//
+// .Shades:hover
+//   h5
+//     font-weight: 600
+// .pic
+//   display: none
+//   height: 270px
+//   width: 25%
+//   position: absolute
+//   background-color: black
+//   padding: 0% 0% 0% 0%
+//   margin: -55px 0% 0% 40%
+// .txt
+//   display: none
+//   font-family: sans-serif
+//   font-size: 0.85em
+//   position: absolute
+//   height: 150px
+//   width: 15%
+//   background-color: red
+//   padding: 0 0 0 0
+//   // margin: -25px 0 0 20%
+// .vl
+//   display: none
+//   position: absolute
+//   // left: -20px
+//   border-right: 1px solid #ccc
+//   height: 210px
+// .Shades:hover .pic, .Shades:hover .txt,.Shades:hover .vl
+//   display: block
+//
+// @media screen and (max-width: 600px)
+//   .column
+//     width: 100%
+//     height: auto
