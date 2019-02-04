@@ -80,10 +80,10 @@ ul, li {
 
 .home-hero {
   width: 100%;
-  margin-top: 72px;
+  top: 64px;
   background-color: #cccccc;
   background-image: url(../images/home-hero.jpg);
-  height: 600px;
+  height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,46 +116,101 @@ ul, li {
 .Discover:hover {
   background-color: rgba(221, 221, 221, 0.7); }
 
-body {
-  height: 3000px; }
-
 header {
-  display: flex;
-  height: 72px;
   width: 100%;
-  background-color: #fff;
-  flex-direction: row;
+  display: flex;
+  justify-content: center; }
+
+.nav-wrapper {
+  height: 64px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
-  position: fixed;
-  top: 0; }
-  header nav {
-    width: 100%;
-    max-width: 1200px;
+  justify-content: center;
+  z-index: 2; }
+  .nav-wrapper .logo {
+    width: 200px;
+    min-width: 200px;
+    height: 60px;
+    margin-left: 24px;
+    z-index: 2;
+    font-size: 32px;
+    text-align: center;
+    line-height: 64px;
+    letter-spacing: 4px;
+    font-weight: lighter; }
+  .nav-wrapper nav {
     display: flex;
-    align-items: center; }
-    header nav .logo {
-      width: 240px;
-      height: 72px;
-      margin-left: 24px;
-      font-size: 32px;
-      font-weight: bold;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center; }
-    header nav .menu {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      height: 70px;
-      margin-left: -240px;
-      justify-content: center;
-      width: 100%; }
-      header nav .menu .menu-item {
-        padding: 18px 24px;
-        line-height: 36px;
-        margin-left: 36px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-left: -220px;
+    height: 64px; }
+    .nav-wrapper nav .nav-container {
+      display: flex; }
+      .nav-wrapper nav .nav-container .nav-item {
+        margin: auto 40px;
+        padding: 20px 8px;
+        width: 64px;
+        text-align: center;
         text-transform: uppercase; }
-        header nav .menu .menu-item:hover {
+        .nav-wrapper nav .nav-container .nav-item:hover {
           border-bottom: 2px solid black; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  z-index: 1;
+  text-align: left;
+  text-transform: capitalize; }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  width: 160px;
+  display: none; }
+
+.blind {
+  margin-left: -160px; }
+
+.drapery {
+  margin-left: -320px; }
+
+.content {
+  display: none;
+  background-color: skyblue;
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  left: 160px;
+  top: 0px; }
+
+.list:hover .content {
+  display: block; }
+
+.nav-item:hover .list {
+  display: flex; }
+
+.nav-item:hover .default {
+  display: block; }
+
+.nav-bg {
+  width: 100%;
+  position: absolute;
+  height: 400px;
+  background-color: #fff;
+  top: 64px;
+  left: 0;
+  display: none; }
+
+.nav-container:hover .nav-bg {
+  display: block;
+  z-index: 0; }
+
+@media (max-width: 900px) {
+  .nav-wrapper nav {
+    margin-left: 0; } }
