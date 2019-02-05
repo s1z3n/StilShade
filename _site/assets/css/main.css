@@ -165,14 +165,18 @@ header {
   top: 64px;
   z-index: 1;
   text-align: left;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  width: 160px; }
 
 .list {
   display: flex;
   flex-direction: column;
-  background-color: pink;
   width: 160px;
-  display: none; }
+  display: none;
+  line-height: 32px;
+  font-size: 15px; }
+  .list:first-child {
+    margin-top: 20px; }
 
 .blind {
   margin-left: -160px; }
@@ -182,34 +186,39 @@ header {
 
 .content {
   display: none;
-  background-color: skyblue;
   position: absolute;
   width: 600px;
-  height: 400px;
   left: 160px;
   top: 0px; }
+  .content .mega-text {
+    padding: 20px 32px 0 8px; }
+    .content .mega-text p {
+      font-size: 14px;
+      line-height: 24px; }
+  .content .mega-img {
+    width: 380px;
+    height: 200px; }
 
 .list:hover .content {
-  display: block; }
+  display: flex; }
 
 .nav-item:hover .list {
   display: flex; }
 
 .nav-item:hover .default {
-  display: block; }
+  display: flex; }
 
 .nav-bg {
   width: 100%;
   position: absolute;
-  height: 400px;
+  height: 450px;
   background-color: #fff;
   top: 64px;
   left: 0;
   display: none; }
 
 .nav-container:hover .nav-bg {
-  display: block;
-  z-index: 0; }
+  display: block; }
 
 @media (max-width: 900px) {
   .nav-wrapper nav {

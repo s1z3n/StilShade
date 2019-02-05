@@ -54,14 +54,21 @@ header
   z-index: 1
   text-align: left
   text-transform: capitalize
-
+  // background-color: honeydew
+  width: 160px
 
 .list
   display: flex
   flex-direction: column
-  background-color: pink
+  // background-color: pink
   width: 160px
   display: none
+  line-height: 32px
+  font-size: 15px
+  &:first-child
+    margin-top: 20px
+
+
 
 
 .blind
@@ -70,27 +77,36 @@ header
   margin-left: -320px
 .content
   display: none
-  background-color: skyblue
   position: absolute
   width: 600px
-  height: 400px
+  // height: 400px
   left: 160px
   top: 0px
+  .mega-text
+    // background-color: pink
+    padding: 20px 32px 0 8px
+    p
+      font-size: 14px
+      line-height: 24px
+      // font-weight: 300
+  .mega-img
+    width: 380px
+    height: 200px
 
 
 
 .list:hover .content
-  display: block
+  display: flex
 .nav-item:hover .list
   display: flex
 
 .nav-item:hover .default
-  display: block
+  display: flex
 
 .nav-bg
   width: 100%
   position: absolute
-  height: 400px
+  height: 450px
   background-color: #fff
   top: 64px
   left: 0
@@ -99,7 +115,9 @@ header
 
 .nav-container:hover .nav-bg
   display: block
-  z-index: 0
+  // z-index: 0
+
+
 
 @media (max-width: 900px)
   .nav-wrapper
