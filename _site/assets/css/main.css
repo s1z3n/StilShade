@@ -116,9 +116,26 @@ ul, li {
 .Discover:hover {
   background-color: rgba(221, 221, 221, 0.7); }
 
+.navadd {
+  margin-left: 108px;
+  font-size: 12px;
+  font-weight: lighter; }
+
+.titletxt h2 {
+  font-family: serif;
+  text-align: center;
+  text-transform: uppercase; }
+
 section {
   display: flex;
-  flex-direction: column; }
+  flex-direction: row;
+  margin: 10px 164px; }
+  section .productimg {
+    height: 435px;
+    width: 2000px;
+    background-color: gray; }
+  section .productdtl {
+    margin: 10px 64px; }
 
 header {
   width: 100%;
