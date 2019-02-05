@@ -75,9 +75,6 @@ body {
   -webkit-text-size-adjust: 100%;
   margin: 0; }
 
-ul, li {
-  list-style-type: none; }
-
 .home-hero {
   width: 100%;
   top: 64px;
@@ -88,54 +85,73 @@ ul, li {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-
-.hero-txt {
-  color: white;
-  text-align: center;
-  padding-top: 15%; }
-
-.finest {
-  font-style: italic;
-  font-size: 150%; }
-
-.treatments {
-  display: block;
-  font-size: 200%;
-  font-style: none;
-  font-family: serif;
-  font-weight: bold; }
-
-.Discover {
-  background-color: white;
-  margin: 0% 45% 0 45%;
-  padding: 10px;
-  cursor: pointer;
-  border: 1px solid white;
-  text-align: center; }
-
-.Discover:hover {
-  background-color: rgba(221, 221, 221, 0.7); }
+  .home-hero p {
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    font-style: italic;
+    font-size: 1.7em;
+    font-family: serif; }
+  .home-hero span {
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 2.7em;
+    font-style: none;
+    font-family: serif;
+    font-weight: bold; }
+  .home-hero button {
+    background-color: white;
+    margin: 0 45%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    text-align: center; }
+  .home-hero button:hover {
+    background-color: rgba(221, 221, 221, 0.3);
+    color: black; }
 
 .navadd {
+  margin-top: 10px;
   margin-left: 108px;
   font-size: 12px;
   font-weight: lighter; }
 
-.titletxt h2 {
+.titletxt h2, .titletxt h4 {
   font-family: serif;
   text-align: center;
   text-transform: uppercase; }
 
-section {
+.shades {
   display: flex;
   flex-direction: row;
-  margin: 10px 164px; }
-  section .productimg {
+  padding: 30px 164px; }
+  .shades .productimg {
     height: 435px;
     width: 2000px;
     background-color: gray; }
-  section .productdtl {
+  .shades .productdtl {
     margin: 10px 64px; }
+    .shades .productdtl p {
+      font-size: 14px; }
+    .shades .productdtl h6 {
+      font-size: 14px;
+      font-weight: lighter;
+      margin-bottom: 0; }
+    .shades .productdtl ul {
+      padding-left: 20px;
+      list-style-type: disc; }
+      .shades .productdtl ul li {
+        font-size: 14px; }
+    .shades .productdtl button {
+      margin: 0px 0px;
+      padding: 12px 65px;
+      background-color: rgba(0, 0, 0, 0.9);
+      border: 0;
+      color: white; }
+    .shades .productdtl button:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+      cursor: pointer; }
 
 header {
   width: 100%;
