@@ -196,7 +196,7 @@ header {
     z-index: 2;
     font-size: 32px;
     text-align: center;
-    line-height: 64px;
+    line-height: 72px;
     letter-spacing: 4px;
     font-weight: lighter; }
   .nav-wrapper nav {
@@ -211,7 +211,7 @@ header {
       .nav-wrapper nav .nav-container .nav-item {
         margin: auto 40px;
         padding: 20px 8px;
-        width: 64px;
+        width: 72px;
         text-align: center;
         text-transform: uppercase; }
         .nav-wrapper nav .nav-container .nav-item:hover {
@@ -221,7 +221,6 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 64px;
   z-index: 1;
   text-align: left;
   text-transform: capitalize;
@@ -235,28 +234,37 @@ header {
   line-height: 32px;
   font-size: 15px; }
   .list:first-child {
-    margin-top: 20px; }
+    margin-top: 40px; }
+
+.menu a:hover {
+  font-weight: 500;
+  color: #111; }
+  .menu a:hover p {
+    font-weight: 400; }
 
 .blind {
-  margin-left: -160px; }
+  margin-left: -168px; }
 
 .drapery {
-  margin-left: -320px; }
+  margin-left: -338px; }
 
 .content {
   display: none;
   position: absolute;
   width: 600px;
+  height: 300px;
   left: 160px;
-  top: 0px; }
+  top: 24px;
+  background-color: #fff; }
   .content .mega-text {
-    padding: 20px 32px 0 8px; }
+    width: 160px;
+    padding: 16px 24px 0 8px; }
     .content .mega-text p {
       font-size: 14px;
       line-height: 24px; }
   .content .mega-img {
-    width: 380px;
-    height: 200px; }
+    margin-left: 16px;
+    margin-top: 8px; }
 
 .list:hover .content {
   display: flex; }
@@ -270,7 +278,6 @@ header {
 .nav-bg {
   width: 100%;
   position: absolute;
-  height: 450px;
   background-color: #fff;
   top: 72px;
   left: 0;
