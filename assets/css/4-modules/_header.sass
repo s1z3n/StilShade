@@ -65,7 +65,8 @@ header
   line-height: 32px
   font-size: 15px
   &:first-child
-    margin-top: 40px
+    margin-top: 36px
+    padding-top: 16px
 
 .menu a:hover
   font-weight: 500
@@ -77,15 +78,16 @@ header
 .blind
   margin-left: -168px
 .drapery
-  margin-left: -338px
+  margin-left: -336px
 
 .content
   display: none
   position: absolute
   width: 600px
-  height: 300px
+  height: 280px
   left: 160px
-  top: 24px
+  top: 22px
+  padding-top: 16px
   background-color: #fff
   .mega-text
     width: 160px
@@ -114,11 +116,13 @@ header
 .nav-bg
   width: 100%
   position: absolute
+  height: 300px
   background-color: #fff
   top: 72px
   left: 0
   display: none
-
+  &:hover .list
+    display: none
 
 .nav-container:hover .nav-bg
   display: block
