@@ -76,40 +76,46 @@ body {
   margin: 0; }
 
 .home-hero {
-  width: 100%;
-  top: 64px;
+  display: flex;
+  height: 600px;
   background-color: #cccccc;
   background-image: url(../images/home-hero.jpg);
-  height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .home-hero p {
-    color: white;
-    text-align: center;
-    padding-top: 15%;
-    font-style: italic;
-    font-size: 1.7em;
-    font-family: serif; }
-  .home-hero span {
-    color: white;
-    text-align: center;
-    display: block;
-    font-size: 2.7em;
-    font-style: none;
-    font-family: serif;
-    font-weight: bold; }
-  .home-hero button {
-    background-color: white;
-    margin: 0 45%;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: 1px solid white;
-    text-align: center; }
-  .home-hero button:hover {
-    background-color: rgba(221, 221, 221, 0.3);
-    color: black; }
+  .home-hero div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 64px; }
+    .home-hero div p {
+      color: white;
+      text-align: center;
+      font-style: italic;
+      margin: auto;
+      font-size: 24px;
+      font-family: serif; }
+      .home-hero div p span {
+        color: white;
+        display: block;
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-family: serif;
+        font-weight: bold; }
+    .home-hero div button {
+      background-color: white;
+      margin: 24px auto;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 1px solid white;
+      text-align: center; }
+    .home-hero div button:hover {
+      background-color: rgba(221, 221, 221, 0.3);
+      color: black; }
 
 .navadd {
   position: absolute;
@@ -160,20 +166,18 @@ body {
 
 @media screen and (max-width: 900px) {
   .products section {
-    display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    align-content: center; }
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    margin: auto; }
   .products .productimg {
-    background-color: none;
-    object-fit: scale-down;
-    margin: 0 5%;
-    align-items: center; }
+    height: 300px; }
+    .products .productimg:nth-child(even) {
+      order: -1; }
   .products .productdtl {
     text-align: center;
-    margin: 0 5%;
-    padding: 0 5%; } }
+    width: 340px; } }
 header {
   width: 100%;
   display: flex;
@@ -287,5 +291,7 @@ header {
   display: block; }
 
 @media (max-width: 900px) {
-  .nav-wrapper nav {
-    margin-left: 0; } }
+  .nav-wrapper {
+    display: none; }
+    .nav-wrapper nav {
+      margin-left: 0; } }

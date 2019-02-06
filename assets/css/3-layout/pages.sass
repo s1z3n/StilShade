@@ -1,39 +1,47 @@
 //home-page
 .home-hero
-  width: 100%
-  top: 64px
+  display: flex
+  height: 600px
   background-color: #cccccc
   background-image: url(../images/home-hero.jpg)
-  height: 800px
   background-position: center
   background-repeat: no-repeat
   background-size: cover
   background-attachment: fixed
-  p
-    color: white
-    text-align: center
-    padding-top: 15%
-    font-style: italic
-    font-size: 1.7em
-    font-family: serif
-  span
-    color: white
-    text-align: center
-    display: block
-    font-size: 2.7em
-    font-style: none
-    font-family: serif
-    font-weight: bold
-  button
-    background-color: white
-    margin: 0 45%
-    padding: 10px 20px
-    cursor: pointer
-    border: 1px solid white
-    text-align: center
-  button:hover
-    background-color: rgba(221, 221, 221, 0.3)
-    color: black
+  div
+    margin: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    top: 64px
+
+    p
+      color: white
+      text-align: center
+      font-style: italic
+      margin: auto
+      font-size: 24px
+      font-family: serif
+      span
+        color: white
+        display: block
+        text-align: center
+        font-size: 48px
+        font-style: normal
+        font-family: serif
+        font-weight: bold
+
+    button
+      background-color: white
+      margin: 24px auto
+      padding: 10px 20px
+      cursor: pointer
+      border: 1px solid white
+      text-align: center
+    button:hover
+      background-color: rgba(221, 221, 221, 0.3)
+      color: black
 
 //products
 .navadd
@@ -85,19 +93,15 @@
 @media screen and (max-width: 900px)
   .products
     section
-      display: flex
       flex-direction: column
-      margin: 0
-      padding: 0
-      align-content: center
-    .productimg
-      background-color: none
-      object-fit: scale-down
-      // width: 50%
-      margin: 0 5%
+      justify-content: center
       align-items: center
+      padding: 32px 0
+      margin: auto
+    .productimg
+      height: 300px
+      &:nth-child(even)
+        order: -1
     .productdtl
       text-align: center
-      margin: 0 5%
-      padding: 0 5%
-      // min-width: 400px
+      width: 340px
