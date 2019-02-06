@@ -22,7 +22,7 @@ header
     z-index: 2
     font-size: 32px
     text-align: center
-    line-height: 64px
+    line-height: 72px
     letter-spacing: 4px
     font-weight: lighter
   nav
@@ -40,7 +40,7 @@ header
         // background-color: green
         margin: auto 40px
         padding: 20px 8px
-        width: 64px
+        width: 72px
         // height: 62px
         text-align: center
         text-transform: uppercase
@@ -51,13 +51,11 @@ header
   display: flex
   flex-direction: column
   position: absolute
-  top: 64px
   z-index: 1
   text-align: left
   text-transform: capitalize
   // background-color: honeydew
   width: 160px
-
 .list
   display: flex
   flex-direction: column
@@ -67,30 +65,41 @@ header
   line-height: 32px
   font-size: 15px
   &:first-child
-    margin-top: 20px
+    margin-top: 40px
+
+.menu a:hover
+  font-weight: 500
+  color: #111
+  p
+    font-weight: 400
 
 
 .blind
-  margin-left: -160px
+  margin-left: -168px
 .drapery
-  margin-left: -320px
+  margin-left: -338px
+
 .content
   display: none
   position: absolute
   width: 600px
-  // height: 400px
+  height: 300px
   left: 160px
-  top: 0px
+  top: 24px
+  background-color: #fff
   .mega-text
+    width: 160px
+    padding: 16px 24px 0 8px
     // background-color: pink
-    padding: 20px 32px 0 8px
     p
       font-size: 14px
       line-height: 24px
       // font-weight: 300
   .mega-img
-    width: 380px
-    height: 200px
+    // width: 380px
+    // background-color: lime
+    margin-left: 16px
+    margin-top: 8px
 
 
 
@@ -105,7 +114,6 @@ header
 .nav-bg
   width: 100%
   position: absolute
-  height: 450px
   background-color: #fff
   top: 72px
   left: 0
@@ -114,7 +122,6 @@ header
 
 .nav-container:hover .nav-bg
   display: block
-  // z-index: 0
 
 
 
