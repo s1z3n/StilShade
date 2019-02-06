@@ -35,8 +35,9 @@
     background-color: rgba(221, 221, 221, 0.3)
     color: black
 
-//shades
+//products
 .navadd
+  position: absolute
   margin-top: 16px
   margin-left: 108px
   font-size: 12px
@@ -46,36 +47,57 @@
     font-family: serif
     text-align: center
     text-transform: uppercase
-.shades
-  display: flex
-  flex-direction: row
-  padding: 30px 164px
-  .productimg
-    height: 435px
-    width: 2000px
-    background-color: gray
-  .productdtl
-    margin: 10px 64px
-    p
-      font-size: 14px
-    h6
-      font-size: 14px
-      font-weight: lighter
-      margin-bottom: 0
-    ul
-      padding-left: 20px
-      list-style-type: disc
-      li
+.products
+  section
+    display: flex
+    flex-direction: row
+    padding: 30px 164px
+    .productimg
+      min-width: 400px
+      max-height: 500px
+      background-color: gray
+      object-fit: cover
+    .productdtl
+      margin: 10px 64px
+      p
         font-size: 14px
-    button
-      margin: 0px 0px
-      padding: 12px 65px
-      background-color: rgba(0, 0, 0, 0.9)
-      border: 0
-      color: white
-    button:hover
-      background-color: rgba(0, 0, 0, 0.6)
-      cursor: pointer
-
-.shades:nth-child(even)
+      h6
+        font-size: 14px
+        font-weight: lighter
+        margin-bottom: 0
+      ul
+        padding-left: 20px
+        list-style-type: disc
+        li
+          font-size: 14px
+      button
+        margin: 0px 0px
+        padding: 12px 65px
+        background-color: rgba(0, 0, 0, 0.9)
+        border: 0
+        color: white
+      button:hover
+        background-color: rgba(0, 0, 0, 0.6)
+        cursor: pointer
+.products section:nth-child(even)
   background-color: #eee
+
+@media screen and (max-width: 900px)
+  .products
+    section
+      display: flex
+      flex-direction: column
+      margin: 0
+      padding: 0
+      align-content: center
+    .productimg
+      background-color: none
+      object-fit: scale-down
+      // width: 50%
+      margin: 0 5%
+      align-items: center
+    .productdtl
+      text-align: center
+      margin: 0 5%
+      padding: 0 5%
+      // min-width: 400px

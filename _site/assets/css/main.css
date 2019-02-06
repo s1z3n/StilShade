@@ -112,6 +112,7 @@ body {
     color: black; }
 
 .navadd {
+  position: absolute;
   margin-top: 16px;
   margin-left: 108px;
   font-size: 12px;
@@ -122,40 +123,57 @@ body {
   text-align: center;
   text-transform: uppercase; }
 
-.shades {
+.products section {
   display: flex;
   flex-direction: row;
   padding: 30px 164px; }
-  .shades .productimg {
-    height: 435px;
-    width: 2000px;
-    background-color: gray; }
-  .shades .productdtl {
+  .products section .productimg {
+    min-width: 400px;
+    max-height: 500px;
+    background-color: gray;
+    object-fit: cover; }
+  .products section .productdtl {
     margin: 10px 64px; }
-    .shades .productdtl p {
+    .products section .productdtl p {
       font-size: 14px; }
-    .shades .productdtl h6 {
+    .products section .productdtl h6 {
       font-size: 14px;
       font-weight: lighter;
       margin-bottom: 0; }
-    .shades .productdtl ul {
+    .products section .productdtl ul {
       padding-left: 20px;
       list-style-type: disc; }
-      .shades .productdtl ul li {
+      .products section .productdtl ul li {
         font-size: 14px; }
-    .shades .productdtl button {
+    .products section .productdtl button {
       margin: 0px 0px;
       padding: 12px 65px;
       background-color: rgba(0, 0, 0, 0.9);
       border: 0;
       color: white; }
-    .shades .productdtl button:hover {
+    .products section .productdtl button:hover {
       background-color: rgba(0, 0, 0, 0.6);
       cursor: pointer; }
 
-.shades:nth-child(even) {
+.products section:nth-child(even) {
   background-color: #eee; }
 
+@media screen and (max-width: 900px) {
+  .products section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-content: center; }
+  .products .productimg {
+    background-color: none;
+    object-fit: scale-down;
+    margin: 0 5%;
+    align-items: center; }
+  .products .productdtl {
+    text-align: center;
+    margin: 0 5%;
+    padding: 0 5%; } }
 header {
   width: 100%;
   display: flex;
