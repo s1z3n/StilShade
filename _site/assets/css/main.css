@@ -131,7 +131,6 @@ body {
       background-color: rgba(221, 221, 221, 0.3);
       color: black; }
 
-<<<<<<< HEAD
 hr {
   margin: 24px 13%; }
 
@@ -208,11 +207,9 @@ hr {
 
   .photo-gallery .photo-gallery-txt {
     width: 50%; } }
-=======
 .section1 {
   margin-top: 100px; }
 
->>>>>>> b4f85a7048b84e7d46aa85f06f526cb070be73fb
 .navadd {
   position: absolute;
   margin-top: 16px;
@@ -452,13 +449,10 @@ header {
     font-weight: 500; }
 
 .customize-narrow-bg {
-<<<<<<< HEAD
   max-width: 200px;
-  z-index: -2; }
-=======
+  z-index: -2;
   width: 0px;
   max-width: 200px; }
->>>>>>> b4f85a7048b84e7d46aa85f06f526cb070be73fb
   .customize-narrow-bg .narrow-bg {
     height: 860px; }
 
@@ -488,7 +482,6 @@ header {
   bottom: 0;
   z-index: 3;
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   margin-left: 20px; }
   .bottom-bar .test1 {
@@ -505,13 +498,11 @@ header {
 .primary-btn {
   margin: 12px 200px 8px auto;
   height: 48px; }
-=======
-  justify-content: center; }
-  .bottom-bar .bottom-bar-wrapper {
+  .primary-btn .bottom-bar-wrapper {
     width: 1200px;
     display: flex;
     justify-content: flex-end; }
-    .bottom-bar .bottom-bar-wrapper .primary-btn {
+    .primary-btn .bottom-bar-wrapper .primary-btn {
       margin: 12px 40px 12px auto; }
 
 .primary-btn {
@@ -520,7 +511,6 @@ header {
 .empty-space80 {
   width: 100%;
   height: 80px; }
->>>>>>> b4f85a7048b84e7d46aa85f06f526cb070be73fb
 
 @media (max-width: 1214px) {
   .thumbnails {
@@ -541,9 +531,6 @@ header {
     width: 100%; }
 
   .thumbnails-wrapper {
-<<<<<<< HEAD
-    width: 98%; } }
-=======
+    width: 98%;
     width: 95%;
     justify-content: center; } }
->>>>>>> b4f85a7048b84e7d46aa85f06f526cb070be73fb
