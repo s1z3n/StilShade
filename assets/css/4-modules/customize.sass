@@ -1,0 +1,90 @@
+.customize-container
+  margin-top: 100px
+  display: flex
+  flex-direction: row
+  max-width: 1600px
+  justify-content: center
+  .customize
+    .main-bg
+      width: 700px
+      margin-top: -474px
+    .shades-map
+      width: 368px
+      height: 420px
+      background-color: pink
+      z-index: 1
+      position: relative
+      left: 278px
+      opacity: 0.5
+      margin-top: 54px
+
+
+  .thumbnails
+    width: 512px
+    background-color: #fff
+    z-index: 2
+    height: 860px
+    // position: absolute
+    // right: 0px
+    .step-1
+      background-color: #eee
+      height: 40px
+      p
+        padding: 12px
+        font-size: 14px
+    .step-1-select
+
+
+
+
+
+.step-1-select
+  display: flex
+  justify-content: space-between
+  padding: 10px
+  width: 400px
+  // padding: 40px
+  p
+    font-size: 14px
+    margin: 0 0 8px 0
+    font-weight: 500
+
+.customize-narrow-bg
+  width: 0px
+  // max-width: 200px
+  z-index: -2
+  .narrow-bg
+    height: 860px
+    // max-width: 200px
+
+.filters
+  font-size: 13px
+
+.thumbnails-wrapper
+  display: flex
+  flex-wrap: wrap
+  margin: 16px 16px
+  .thumbnails-box
+    width: 112px
+    height: 112px
+    background-color: lime
+    margin: 4px
+
+
+@media (max-width: 1214px)
+  .thumbnails
+    position: absolute
+    right: 0px
+
+  .customize-container
+    justify-content: flex-start
+
+@media (max-width: 1000px)
+  .customize-container
+    .thumbnails
+      width: 400px
+
+@media (max-width: 750px)
+  .customize-container
+    .thumbnails
+      width: 100%
