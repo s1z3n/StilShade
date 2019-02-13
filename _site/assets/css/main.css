@@ -172,14 +172,7 @@ body {
     padding: 32px 0;
     margin: auto; }
   .products .productimg {
-<<<<<<< HEAD
     height: 300px; }
-=======
-    background-color: none;
-    object-fit: scale-down;
-    margin: 0 5%;
-    align-items: center; }
->>>>>>> b5afcee6a13b6ff51cc51e22664cf963e986b625
     .products .productimg:nth-child(even) {
       order: -1; }
   .products .productdtl {
