@@ -364,8 +364,8 @@ header {
     font-weight: 500; }
 
 .customize-narrow-bg {
-  max-width: 200px;
-  z-index: -2; }
+  width: 0px;
+  max-width: 200px; }
   .customize-narrow-bg .narrow-bg {
     height: 860px; }
 
@@ -395,22 +395,20 @@ header {
   bottom: 0;
   z-index: 3;
   display: flex;
-  justify-content: center;
-  margin-left: 20px; }
-  .bottom-bar .test1 {
-    width: 700px; }
-  .bottom-bar .test2 {
-    width: 512px;
-    display: flex; }
-    .bottom-bar .test2 .primary-btn {
-      margin-left: auto;
-      margin-right: 40px; }
-  .bottom-bar .test3 {
-    width: 240px; }
+  justify-content: center; }
+  .bottom-bar .bottom-bar-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end; }
+    .bottom-bar .bottom-bar-wrapper .primary-btn {
+      margin: 12px 40px 12px auto; }
 
 .primary-btn {
-  margin: 12px 200px 8px auto;
   height: 48px; }
+
+.empty-space80 {
+  width: 100%;
+  height: 80px; }
 
 @media (max-width: 1214px) {
   .thumbnails {
@@ -431,4 +429,5 @@ header {
     width: 100%; }
 
   .thumbnails-wrapper {
-    width: 98%; } }
+    width: 95%;
+    justify-content: center; } }
