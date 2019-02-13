@@ -42,7 +42,45 @@
     button:hover
       background-color: rgba(221, 221, 221, 0.3)
       color: black
-
+hr
+  margin: 24px 10%
+.explore
+  display: flex
+  flex-direction: row
+  margin: 32px 10%
+  text-align: center
+  font-family: serif
+  font-size: 24px
+  .materials
+    border-right: 1px solid lightgray
+    border-left: 1px solid lightgray
+  div
+    p
+      padding: 8px 56px
+      font-size: 14px
+      font-family: sans-serif
+      font-weight: 0
+    a
+      font-weight: bold
+      font-size: 16px
+      font-family: sans-serif
+      text-transform: uppercase
+.exclusive
+  text-align: center
+  margin: 24px 10%
+  font-family: serif
+  font-size: 24px
+  p
+    font-size: 14px
+    font-family: sans-serif
+    font-weight: 200
+  .partner-img
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    a
+      display: flex
+      justify-content: space-around
 //products
 .navadd
   position: absolute
@@ -91,6 +129,12 @@
   background-color: #eee
 
 @media screen and (max-width: 900px)
+  .navadd
+    margin-left: 40px
+  .titletxt
+    h2
+      font-size: 30px
+      margin-top: 48px
   .products
     section
       flex-direction: column
@@ -106,3 +150,6 @@
     .productdtl
       text-align: center
       width: 340px
+      ul
+        li
+          list-style-type: none
