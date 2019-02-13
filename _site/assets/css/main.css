@@ -118,12 +118,12 @@ body {
       color: black; }
 
 hr {
-  margin: 24px 10%; }
+  margin: 24px 13%; }
 
 .explore {
   display: flex;
   flex-direction: row;
-  margin: 32px 10%;
+  margin: 32px 13%;
   text-align: center;
   font-family: serif;
   font-size: 24px; }
@@ -131,7 +131,7 @@ hr {
     border-right: 1px solid lightgray;
     border-left: 1px solid lightgray; }
   .explore div p {
-    padding: 8px 56px;
+    padding: 8px 24px;
     font-size: 14px;
     font-family: sans-serif;
     font-weight: 0; }
@@ -141,9 +141,28 @@ hr {
     font-family: sans-serif;
     text-transform: uppercase; }
 
+.photo-gallery {
+  display: flex;
+  background-image: url(../images/LP_PhotoGallery2019.jpg);
+  background-color: pink;
+  margin: 0 13%;
+  height: 400px;
+  justify-content: flex-end; }
+  .photo-gallery .photo-gallery-txt {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding-top: 80px; }
+    .photo-gallery .photo-gallery-txt h4 {
+      font-family: serif;
+      font-size: 24px; }
+    .photo-gallery .photo-gallery-txt p {
+      font-size: 16px; }
+
 .exclusive {
   text-align: center;
-  margin: 24px 10%;
+  margin: 24px 13%;
   font-family: serif;
   font-size: 24px; }
   .exclusive p {
@@ -157,7 +176,23 @@ hr {
     .exclusive .partner-img a {
       display: flex;
       justify-content: space-around; }
+      .exclusive .partner-img a img {
+        max-width: 200px; }
 
+@media screen and (max-width: 900px) {
+  .explore {
+    flex-direction: column; }
+    .explore .materials {
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      border-right: none;
+      border-left: none; }
+
+  .exclusive .partner-img {
+    flex-direction: column; }
+
+  .photo-gallery .photo-gallery-txt {
+    width: 50%; } }
 .navadd {
   position: absolute;
   margin-top: 16px;
