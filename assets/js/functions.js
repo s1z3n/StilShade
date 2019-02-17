@@ -28,7 +28,7 @@ function loadImages () {
       createSwatches(data.images)
     },
     error: function (err) {
-      alert(err)
+      console.log(err)
     }
   })
 }
