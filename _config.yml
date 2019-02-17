@@ -6,4 +6,4 @@ permalink: pretty
 sass:
  sass_dir: assets/css
  style: :nested
-# baseurl: /StilShade
+baseurl: "StilShade"
