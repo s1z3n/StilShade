@@ -307,7 +307,8 @@ header {
     text-align: center;
     line-height: 72px;
     letter-spacing: 4px;
-    font-weight: lighter; }
+    font-weight: lighter;
+    text-transform: uppercase; }
   .nav-wrapper nav {
     display: flex;
     flex-direction: row;
