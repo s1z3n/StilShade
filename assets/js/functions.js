@@ -21,7 +21,7 @@ $(document).ready(function () {
 function loadImages () {
   $.ajax({
     global: false,
-    url: '../assets/js/data.json',
+    url: '../_site/assets/js/data.json',
     dataType: 'json',
     success: function (data) {
       images = data
@@ -48,7 +48,7 @@ function createSwatches (images) {
 function createSwatchDom (swatch) {
   var template = `
    <div class="thumbnails-box">
-      <img class="color-trigger" src="../assets/images/${swatch.url}"
+      <img class="color-trigger" src="../_site/assets/images/${swatch.url}"
       data-color="${swatch.color}" data-category="${swatch.collection}"
        alt="${swatch.url}">
    </div>
