@@ -48,7 +48,7 @@ function createSwatches (images) {
 function createSwatchDom (swatch) {
   var template = `
    <div class="thumbnails-box">
-      <img class="color-trigger" src="/assets/images/${swatch.url}"
+      <img class="color-trigger" src="{{site.baseurl}}/assets/images/${swatch.url}"
       data-color="${swatch.color}" data-category="${swatch.collection}"
        alt="${swatch.url}">
    </div>
