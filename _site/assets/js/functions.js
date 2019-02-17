@@ -28,7 +28,7 @@ function loadImages () {
       createSwatches(data.images)
     },
     error: function (err) {
-      alert(err)
+      console.log(err)
     }
   })
 }
@@ -56,3 +56,7 @@ function createSwatchDom (swatch) {
 
   return template
 }
+
+
+// for local: src="/assets/images/
+// for gh-pages: src="/StilShade/assets/images/
