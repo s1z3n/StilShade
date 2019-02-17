@@ -21,7 +21,7 @@ $(document).ready(function () {
 function loadImages () {
   $.ajax({
     global: false,
-    url: '../assets/js/data.json',
+    url: './StilShade/assets/js/data.json',
     dataType: 'json',
     success: function (data) {
       images = data
