@@ -56,3 +56,7 @@ function createSwatchDom (swatch) {
 
   return template
 }
+
+
+// for local: src="/assets/images/
+// for gh-pages: src="/StilShade/assets/images/
