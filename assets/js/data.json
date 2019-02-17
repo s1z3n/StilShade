@@ -1,0 +1,64 @@
+{
+  "images": [
+    {
+      "url": "swatch1.jpg",
+      "color": "#ebebf0",
+      "collecion": "light"
+    },
+    {
+      "url": "swatch2.jpg",
+      "color": "#edeeed",
+      "collecion": "blackout"
+    },
+    {
+      "url": "swatch3.jpg",
+      "color": "#e6e1db",
+      "collecion": "blackout"
+    },
+    {
+      "url": "swatch4.jpg",
+      "color": "#92a2af",
+      "collecion": "blackout"
+    },
+    {
+      "url": "swatch5.jpg",
+      "color": "#a9a59e",
+      "collecion": "specialty"
+    },
+    {
+      "url": "swatch6.jpg",
+      "color": "#a4a7a8",
+      "collecion": "light"
+    },
+    {
+      "url": "swatch7.jpg",
+      "color": "#9d9897",
+      "collecion": "specialty"
+    },
+    {
+      "url": "swatch8.jpg",
+      "color": "#6a6f77",
+      "collecion": "light"
+    },
+    {
+      "url": "swatch9.jpg",
+      "color": "#6b6a67",
+      "collecion": "light"
+    },
+    {
+      "url": "swatch10.jpg",
+      "color": "#6b615a",
+      "collecion": "specialty"
+    },
+    {
+      "url": "swatch11.jpg",
+      "color": "#2f3143",
+      "collecion": "blackout"
+    },
+    {
+      "url": "swatch12.jpg",
+      "color": "#0e0e11",
+      "collecion": "specialty"
+    }
+  ]
+}
